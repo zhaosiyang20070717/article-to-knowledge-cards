@@ -1,0 +1,7 @@
+interface:
+  display_name: "知识卡片生成器"
+  short_description: "把文章或 Markdown/TXT 文件提炼成 5~8 张知识卡片"
+  default_prompt: |
+    Use $make-knowledge-cards to turn the article the user provides (pasted text or a local .md/.txt file) into 5-8 knowledge cards.
+    Each card must contain: 标题 (title), 核心知识 (core knowledge), 简明解释 (concise explanation), and 例子或自测问题 (an example or a self-test question).
+    Only extract genuinely important knowledge, one point per card, remove duplicates, never invent information absent from the original text, and do not pad the card count when the source is thin.
